@@ -29,8 +29,6 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - ProviderInterface implementation is pending (Milestone 4)
 - Source files in `src/` retain their original import paths from the Host repo — these will be resolved in Milestone 4 when the provider is decoupled from Host internals
-- License is MIT (repo default). Task brief referenced Apache 2.0 — flagged for Project Designer review before Milestone 4 release.
-
 ---
 
 *Earlier history belongs to the PlayRooms Host repository (HAButtPlugIO-PlayRooms through v3.3.0).*

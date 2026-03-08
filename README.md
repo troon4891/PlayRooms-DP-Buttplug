@@ -1,6 +1,6 @@
 # PlayRooms — Buttplug.io Device Provider
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 A [PlayRooms](https://github.com/troon4891/PlayRooms) device-provider plugin that integrates **100+ intimate hardware devices** via [Buttplug.io](https://buttplug.io) and [Intiface Engine](https://intiface.com/engine/).
 

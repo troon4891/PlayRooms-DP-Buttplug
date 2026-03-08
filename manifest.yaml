@@ -4,7 +4,7 @@ version: "1.0.0"
 type: device-provider
 description: "Integrates 100+ intimate hardware devices via Buttplug.io and Intiface Engine. Supports Lovense, Hismith, We-Vibe, Satisfyer, The Handy, and many more."
 author: "PlayRooms"
-license: "MIT"
+license: "Apache-2.0"
 providerApiVersion: 1
 
 requirements:
