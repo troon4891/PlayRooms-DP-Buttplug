@@ -1,0 +1,31 @@
+{
+  "name": "playrooms-dp-buttplug",
+  "version": "1.0.0",
+  "description": "PlayRooms Device Provider — Buttplug.io / Intiface Engine",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playrooms",
+    "buttplug",
+    "intiface",
+    "lovense",
+    "device-provider"
+  ],
+  "author": "troon4891",
+  "license": "MIT",
+  "dependencies": {
+    "buttplug": "^3.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "drizzle-orm": "^0.38.0"
+  }
+}
