@@ -212,3 +212,18 @@ Be specific and technical:
 ```
 
 **Scope the checklist to what you changed.** Both sections should cover the same functionality — one in plain language, one with technical precision.
+
+---
+
+### Git Workflow
+
+Claude Code cannot push directly to `beta` or `main`. All work goes to a `claude/*` feature branch which is automatically pushed. The Project Designer merges via PR on GitHub.
+
+**Your workflow:**
+1. Create a feature branch (Claude Code does this automatically with `claude/` prefix)
+2. Commit your work with clear messages
+3. Push the feature branch (this succeeds)
+4. Tell the Project Designer the branch is ready for PR to beta
+5. Do NOT attempt to merge to beta locally or push to beta — it will fail with a 403
+
+**Do NOT waste time** trying to merge to beta, push to beta, or work around the branch restriction. Just push your feature branch and tell the user to create the PR.
