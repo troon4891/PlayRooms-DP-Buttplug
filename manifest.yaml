@@ -1,0 +1,47 @@
+name: buttplug
+displayName: "Buttplug.io (Intiface Engine)"
+version: "1.0.0"
+type: device-provider
+description: "Integrates 100+ intimate hardware devices via Buttplug.io and Intiface Engine. Supports Lovense, Hismith, We-Vibe, Satisfyer, The Handy, and many more."
+author: "PlayRooms"
+license: "MIT"
+providerApiVersion: 1
+
+requirements:
+  bluetooth: false    # Optional — enabled via Host config
+  serial: false       # Optional — enabled via Host config
+  network: false      # Intiface Engine runs locally
+
+settings:
+  intifacePort:
+    type: number
+    label: "Intiface Engine Port"
+    description: "WebSocket port for the local Intiface Engine server"
+    default: 12345
+    required: true
+  scanTimeout:
+    type: number
+    label: "Scan Timeout (ms)"
+    description: "Auto-stop device scan after this many milliseconds"
+    default: 30000
+  logLevel:
+    type: select
+    label: "Log Level"
+    options: [debug, info, warn, error]
+    default: "info"
+
+aiInteraction:
+  allowed: true
+  defaultEnabled: true
+  safetyNote: "Standard vibration/rotation/linear devices. AI control enabled by default with 75% intensity cap."
+
+riskFlags:
+  - type: "insertion-depth"
+    severity: medium
+    description: "Some supported devices (The Handy, OSR-2) have position control that affects insertion depth. Review SAFETY.md for position-control device precautions."
+  - type: "constriction"
+    severity: medium
+    description: "Some supported devices (Lovense Max) have constriction/inflation capabilities. Start at low values."
+  - type: "noise-level"
+    severity: low
+    description: "Vibration devices produce audible noise at higher intensities."
