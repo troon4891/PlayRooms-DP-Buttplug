@@ -6,6 +6,14 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [1.0.1] — 2026-03-09
+
+### Changed
+
+- **License corrected to Apache 2.0** — replaced GitHub-generated MIT license with full Apache License 2.0 text; copyright holder set to "PlayRooms"; updated `manifest.yaml` `license` field from `"MIT"` to `"Apache-2.0"`
+
+---
+
 ## [1.0.0] — 2026-03-08
 
 ### Added
@@ -29,7 +37,7 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - ProviderInterface implementation is pending (Milestone 4)
 - Source files in `src/` retain their original import paths from the Host repo — these will be resolved in Milestone 4 when the provider is decoupled from Host internals
-- License is MIT (repo default). Task brief referenced Apache 2.0 — flagged for Project Designer review before Milestone 4 release.
+- License corrected to Apache 2.0 in v1.0.1.
 
 ---
 
